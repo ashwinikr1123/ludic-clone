@@ -18,7 +18,7 @@
   <body>
     <header>
       <!--Navigation Bar-->
-      <nav>
+      <div class="navbar">
         <div class="logo">
           <h1>LUDIC</h1>
         </div>
@@ -29,14 +29,47 @@
           </div>
           <i class="fa-solid fa-user bg-black"></i>
         </div>
-      </nav>
+      </div>
+      <!-- showcase area -->
       <div class="showcase">
         <div class="quotes">
-          <h2>MEMORABLE ENTRANCES</h2>
-          <h2>UNFORGETTABLE EXITS</h2>
-          <h2>WELCOME TO THE WORLD <br />OF LUDIC</h2>
+          <h2 class="heading">MEMORABLE ENTRANCES</h2>
+          <h2 class="heading">UNFORGETTABLE EXITS</h2>
+          <h2 class="heading">WELCOME TO THE WORLD <br />OF LUDIC</h2>
         </div>
       </div>
+      <!-- text-animation -->
+      <div class="text-animation"></div>
     </header>
+    <main>
+      <!--offerbox area-->
+      <div class="offerbox-area">
+        <div class="offerbox-text">
+          <h2 class="offer-text">EXCLUSIVE 20% OFF</h2>
+          <p>From this month to the next - <br />add oomph to your wardrobe.</p>
+          <a class="btn" href="">Shop Collection</a>
+        </div>
+        <div class="offerbox-image">
+          <img src="img/image1.png" alt="picture" />
+        </div>
+      </div>
+    </main>
   </body>
+  <!-- <script>
+    window.addEventListener('scroll', function () {
+      var quotes = document.querySelector('.quotes');
+      var showcase = document.querySelector('.showcase');
+      var scrollPosition = window.scrollY;
+
+      if (
+        scrollPosition >= showcase.offsetTop &&
+        scrollPosition <=
+          showcase.offsetTop + showcase.offsetHeight - window.innerHeight
+      ) {
+        quotes.classList.add('sticky');
+      } else {
+        quotes.classList.remove('sticky');
+      }
+    });
+  </script> -->
 </html>

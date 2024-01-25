@@ -115,7 +115,7 @@ i {
   align-items: flex-start;
   padding-left: 80px;
 }
-.offer-text {
+.offer-heading {
   font-size: 6rem;
   margin-bottom: 2rem;
 }
@@ -132,9 +132,10 @@ i {
   font-size: 1.2rem;
 }
 .btn:hover {
-  background-color: #bb0321;
   transition: all 0.2s ease;
+  background-color: #bb0321;
 }
+
 .offerbox-image {
   width: 50%;
   height: 100%;
@@ -144,6 +145,63 @@ i {
   width: 100%;
   height: 100%;
 }
+/*dailymove*/
+.dailymove-area {
+  height: 75vh;
+  color: #222;
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  /* background-image: radial-gradient(
+    circle farthest-corner at 17.1% 22.8%,
+    rgba(226, 24, 24, 1) 0%,
+    rgba(160, 6, 6, 1) 90%
+  ); */
+}
+.dailymove-area h2 {
+  margin-bottom: 25px;
+  font-size: 7rem;
+}
+.dailymove-area p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/*banner-image */
+
+.banner-image {
+  display: flex;
+  height: 100vh;
+}
+.banner-image img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-area {
+  padding-left: 100px;
+  height: 100%;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+}
+.banner-area h2 {
+  margin-bottom: 25px;
+  font-size: 9rem;
+}
+.banner-area p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+/* media queries*/
 
 @media screen and (min-width: 370px) and (max-width: 790px) {
   /* navbar*/
@@ -171,7 +229,7 @@ i {
     align-items: center;
     width: 100%;
   }
-  .offer-text {
+  .offer-heading {
     font-size: 2.4rem;
   }
   .offerbox-text p {
@@ -188,7 +246,7 @@ i {
   .offerbox-text p {
     font-size: 1.3rem;
   }
-  .offer-text {
+  .offer-heading {
     font-size: 3.5rem;
   }
 }

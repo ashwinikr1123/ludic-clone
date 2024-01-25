@@ -43,7 +43,7 @@ body {
   color: #222;
 }
 .para {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
   color: #222;
 }
@@ -187,8 +187,11 @@ i {
   font-size: 7rem;
 }
 .dailymove-area p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
+}
+.red {
+  color: #bb0321;
 }
 
 /*banner area*/
@@ -221,7 +224,7 @@ i {
 /*shoe section*/
 
 /* .shoe-section-area {
-  height: 100vh;
+  height: 100%;
 } */
 .column-card {
   display: flex;
@@ -246,6 +249,54 @@ i {
   height: 100%;
   object-fit: cover;
 }
+
+/*footer area*/
+footer {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #ec1a21;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.col {
+  padding: 50px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.col a {
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: #121212;
+  font-size: 1rem;
+}
+.col3 i {
+  transform: translateX(550px);
+  padding: 10px;
+  color: #222;
+}
+.copyright-text {
+  height: 50px;
+  border-top: 1px solid #666;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 /* media queries for mobiles */
 
 @media screen and (min-width: 370px) and (max-width: 890px) {
@@ -313,13 +364,24 @@ i {
     font-size: 4rem;
   }
   .banner-text .para {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    text-align: center;
     flex: none;
   }
 
   /*shoe section*/
+  .footer {
+    overflow: hidden;
+  }
   .column-card .image {
     height: 150px;
+  }
+  /* footer */
+  .footer-text {
+    flex-direction: column;
+  }
+  .col3 {
+    transform: translateX(-560px);
   }
 }
 

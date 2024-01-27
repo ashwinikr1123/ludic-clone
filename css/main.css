@@ -440,4 +440,12 @@ ul {
   .column-card .image {
     height: 250px;
   }
+  /* footer area*/
+  .footer-text {
+    gap: 0;
+    flex-direction: column;
+  }
+  .col3 {
+    transform: translateX(-560px);
+  }
 }

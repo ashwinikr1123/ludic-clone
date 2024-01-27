@@ -74,6 +74,7 @@ body {
 /*cart icon*/
 
 i {
+  cursor: pointer;
   padding: 0 50px;
   font-size: 2rem;
   color: #bb0321;
@@ -223,9 +224,6 @@ i {
 
 /*shoe section*/
 
-/* .shoe-section-area {
-  height: 100%;
-} */
 .column-card {
   display: flex;
   flex-direction: column;
@@ -245,6 +243,7 @@ i {
 /*shoe -showcase*/
 
 .shoe-showcase img {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -287,7 +286,7 @@ ul {
 }
 .col3 i {
   transform: translateX(550px);
-  padding: 10px;
+  padding: 12px;
   color: #222;
 }
 .copyright-text {
@@ -371,19 +370,24 @@ ul {
     flex: none;
   }
 
-  /*shoe section*/
+  /* footer */
   .footer {
     overflow: hidden;
   }
   .column-card .image {
     height: 150px;
+    /* width: 100%; */
   }
-  /* footer */
+
   .footer-logo {
     padding: 0;
   }
+  .footer-logo img {
+    height: 100%;
+    width: 100%;
+  }
   .col {
-    padding: 20px 0 20px 44px;
+    padding: 20px 20px 0 34px;
   }
   .footer-text {
     gap: 0;
